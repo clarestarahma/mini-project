@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="image/RevoU.png" alt="Logo RevoU" width="30px">
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Our Profile</a></li>
+                <li><a href="">Portofolio</a></li>
+                <li><a href="">Message Us</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <article>
+            <h3>Hi {name}, Welcome To Website</h3>
+            <p>Ini adalah website latihan pertama</p>
+            <div class="banner-container"></div>
+        </article>
+        <hr>
+        <article>
+            <h2>Our Headquarter</h2>
+            <div class="head-jakarta"></div>
+            <div class="head-bandung"></div>
+            <div class="head-surabaya"></div>
+        </article>
+        <hr>
+        <article>
+            <div class="message-container">
+                <div class="form-wrapper">
+                    <h2>Message Us</h2>
+                    <form action="" method="post">
+                    <table>
+                        <tr>
+                            <td>
+                                <table>
+                                        <tr>
+                                        <td colspan="2">Nama</td>
+                                        <td>:</td>
+                                        <td>
+                                            <input type="text" placeholder="Nama" id="input-nama">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><label>Tanggal Lahir</label></td>
+                                        <td>:</td>
+                                        <td><input type="date" placeholder="Nama" id="input-birthdate"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Jenis Kelamin</td>
+                                        <td>:</td>
+                                        <td>
+                                            <input type="radio" name="gender" id="gender-men" value="Laki-laki">Laki-laki
+                                            <input type="radio" name="gender" id="gender-women" value="Perempuan">Perempuan
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Pesan</td>
+                                        <td>:</td>
+                                        <td>
+                                            <textarea name="message" id="message" placeholder="Pesan" cols="30"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">
+                                            <Button type="submit" class="submit-button" onclick="showData()">Submit</Button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    </form>
+                </div>
+                
+                
+                <div class="result-container">
+                    <p>
+                        <b>Current time : </b>
+                        <time><span id="time" class="name"></span></time>
+                    </p>
+                    <br>
+                    <p>
+                        <b>Nama : </b>
+                        <span id="res-nama" class="res-nama"></span>
+                    </p>
+                    <p>
+                        <b>Tanggal Lahir : </b>
+                        <span id="birthdate"></span>
+                    </p>
+                    <p>
+                        <b>Jenis Kelamin : </b>
+                        <span id="gender"></span>
+                    </p>
+                    <p>
+                        <b>Pesan : </b>
+                        <span id="message"></span>
+                    </p>
+                </div>
+            </div>
+            
+        </article>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

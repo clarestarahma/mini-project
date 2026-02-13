@@ -1,0 +1,32 @@
+.message-container {
+    display: flex; /* Membuat isi di dalamnya berjejer ke samping */
+    gap: 50px;     /* Jarak antara form dan kotak hasil */
+    align-items: flex-start; /* Rata atas */
+    align-content: center;
+    justify-content: center;
+    margin: 5px 0;
+    line-height: 0.2;
+    padding: 10px;
+}
+
+.result-container {
+    border: 2px solid black;
+    padding: 15px;
+    width: 400px;
+    min-height: 200px;
+}
+
+.res-nama {
+    margin-left: 10px;
+}
+
+.form-wrapper {
+    width: fit-content;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 5px;
+    cursor: pointer;
+}
+
