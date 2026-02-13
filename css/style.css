@@ -10,6 +10,10 @@ nav ul li {
     margin-right: 15px;
 }
 
+article {
+    margin: 10px 30px 40px 30px;
+}
+
 .hq-container {
     display: flex;
     gap: 40px;
@@ -34,8 +38,4 @@ nav ul li {
 .hq {
     display: block;
     text-align: center;
-}
-
-article {
-    margin: 10px 30px 40px 30px;
 }
