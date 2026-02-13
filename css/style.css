@@ -1,32 +1,41 @@
-.message-container {
-    display: flex; /* Membuat isi di dalamnya berjejer ke samping */
-    gap: 50px;     /* Jarak antara form dan kotak hasil */
-    align-items: flex-start; /* Rata atas */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px 40px 30px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.hq-container {
+    display: flex;
+    gap: 40px;
+    /* background-color: aqua; */
+    max-width: 100%;
+    max-height: 100%;
+    justify-content: start;
     align-content: center;
-    justify-content: center;
-    margin: 5px 0;
-    line-height: 0.2;
-    padding: 10px;
+    flex-wrap: wrap;
+    padding: 10px 30px 40px 30px;
 }
 
-.result-container {
-    border: 2px solid black;
-    padding: 15px;
-    width: 400px;
-    min-height: 200px;
+.c-headquarter {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
 }
 
-.res-nama {
-    margin-left: 10px;
+.hq {
+    display: block;
+    text-align: center;
 }
 
-.form-wrapper {
-    width: fit-content;
+article {
+    margin: 10px 30px 40px 30px;
 }
-
-.submit-button {
-    width: 100%;
-    padding: 5px;
-    cursor: pointer;
-}
-
