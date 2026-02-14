@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="image/cropped_circle_image.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <img src="image/RevoU.png" alt="Logo RevoU" width="30px">
+        <img src="image/cropped_circle_image.png" alt="Logo RevoU" width="30px">
         <nav>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Our Profile</a></li>
-                <li><a href="">Portofolio</a></li>
-                <li><a href="">Message Us</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="/our_profile/our_profile.html">Our Profile</a></li>
+                <li><a href="/portofolio/portofolio.html">Portofolio</a></li>
+                <li><a href="/#message-container">Message Us</a></li>
             </ul>
         </nav>
     </header>
@@ -22,7 +23,7 @@
 
     <main>
         <article>
-            <h3>Hi {name}, Welcome To Website</h3>
+            <h2>Hi<span id="welcome-name"></span>, Welcome To Website</h2>
             <p>Ini adalah website latihan pertama</p>
             <div class="banner-container"></div>
         </article>
@@ -46,44 +47,45 @@
         </article>
         <hr>
         <article>
-            <div class="message-container">
-                <div class="form-wrapper">
-                    <h2>Message Us</h2>
-                    <form action="" method="post">
+            <div class="message-container" id="message-container">
+                <h2>Message Us</h2>
+                <div class="message-flex-container">
+                    <div class="form-wrapper">
+                    <form action="" method="post" onsubmit="showData(event)">
                     <table>
                         <tr>
                             <td>
                                 <table>
                                         <tr>
-                                        <td colspan="2">Nama</td>
-                                        <td>:</td>
+                                        <td class="label">Nama</td>
+                                        <td class="separator">:</td>
                                         <td>
                                             <input type="text" placeholder="Nama" id="input-nama">
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2"><label>Tanggal Lahir</label></td>
-                                        <td>:</td>
+                                        <td class="label"><label>Tanggal Lahir</label></td>
+                                        <td class="separator">:</td>
                                         <td><input type="date" placeholder="Nama" id="input-birthdate"></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2">Jenis Kelamin</td>
-                                        <td>:</td>
+                                        <td class="label">Jenis Kelamin</td>
+                                        <td class="separator">:</td>
                                         <td>
                                             <input type="radio" name="gender" id="gender-men" value="Laki-laki">Laki-laki
                                             <input type="radio" name="gender" id="gender-women" value="Perempuan">Perempuan
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2">Pesan</td>
-                                        <td>:</td>
+                                        <td class="label">Pesan</td>
+                                        <td class="separator">:</td>
                                         <td>
-                                            <textarea name="message" id="message" placeholder="Pesan" cols="30"></textarea>
+                                            <textarea name="message" id="input-message" placeholder="Pesan"></textarea>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td colspan="4">
-                                            <Button type="submit" class="submit-button" onclick="showData()">Submit</Button>
+                                        <td colspan="3">
+                                            <Button type="submit" class="submit-button">Submit</Button>
                                         </td>
                                     </tr>
                                 </table>
@@ -93,8 +95,7 @@
                     </form>
                 </div>
                 
-                
-                <div class="result-container">
+                <div class="result-container" id = result-container>
                     <p>
                         <b>Current time : </b>
                         <time><span id="time" class="name"></span></time>
@@ -117,13 +118,17 @@
                         <span id="message"></span>
                     </p>
                 </div>
+                </div>
+                
             </div>
             
         </article>
     </main>
+    <hr>
 
     <footer>
-
+        <p>Created By Claresta</p>
     </footer>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
