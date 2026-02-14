@@ -73,21 +73,25 @@ article {
 
 .message-flex-container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 50px;
+    width: 100%;
     align-items: center;
 }
 
 .form-wrapper, .result-container {
-    flex: 1;
+    flex: 1 350px;
+    box-sizing: border-box;
+    min-height: 200px;
+    min-width: 0;
 }
 
 .result-container {
     display: None;
     border: 1px solid black;
-    flex: 1;
     padding: 15px;
     min-height: 200px;
-    min-width: 0;
 } 
 
 .form-wrapper {
@@ -108,7 +112,6 @@ article {
 
 table {
     width: 100%;
-    /* table-layout: fixed; */
     word-wrap: break-word;
 }
 
