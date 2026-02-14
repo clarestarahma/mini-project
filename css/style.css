@@ -150,6 +150,7 @@ footer {
     padding: 20px;
     min-height: 100vh;
     background-color: beige;
+    flex-wrap: wrap;
 }
 
 .greeting-text {
@@ -160,16 +161,17 @@ footer {
 
 .greeting-text > p,
 .about-desc > p {
-    font-size: 30px;
+    font-size: 15px;
     line-height: 1.5;
 }
 
 .greeting-text > h1,
 .about-desc > h2 {
-    font-size: 40px;
+    font-size: 20px;
 }
 
 .greeting-img img {
+    max-width: 100%;
     width: 350px;
     height: auto;
     display: block;
@@ -203,16 +205,40 @@ footer {
 .skill-container > div {
     border: 2px solid grey;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     border-radius: 20px;
     background-color: beige;
     flex-wrap: wrap;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .skill-container > div h4, 
 .skill-container > div p {
     margin: 10px 0; 
+}
+
+a:link {
+    color: black; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+
+.active {
+    color: blue !important;
+    font-weight: bold;
+    border-bottom: 2px solid blue; 
 }
 
 .about-desc {
